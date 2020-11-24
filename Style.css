@@ -1,0 +1,268 @@
+*{	/*зірочка озн. усі елементи сайту вибрані */
+	padding: 0;
+	margin: 0;
+	font-family: 'Roboto Condensed', sans-serif;	/*ми зробили зброс бо різні браузери мають різні відступи за замовчуванням */
+}
+body, html{
+	overflow-x: hidden;/*означає що ми керуємо відображення вмісту блочного елементу по горизонталі, якщо наш контент цільно не поміщається */
+  background-color: #9ACD32;
+
+}
+header {
+	/* background: url('../images/bg11.jpg') no-repeat center top / cover; */
+	height: 750px;
+}
+nav{
+	margin: auto;/*щоб центрувати*/
+	width: 100%;
+}
+#checkbox-menu,	/*стилізуємо чекбокс щоб ого не було видно */
+
+.menu{ /* стилізуємо меню*/
+	padding: 0;
+	margin: 0;
+	height: 50px;
+	display: flex;
+	flex-direction: row; /*щоб вміст йшов рядком зліва на право*/ /*елементи рівномірно розподілені по строці з рівним місцем навколо них*/
+    justify-content: space-around;
+    align-items: center;
+    list-style-type: none; /*для того щоб забрати маркери для кожного елементу списку*/ 
+    background: #800000;
+    width: 100%;
+}
+
+.menu li a{ /*Стилізуємо силки*/
+	color: #FFFFFF;
+	text-decoration: none; /*щоб забрати підкреслену лінію*/
+	align-self: center; /*потрібен щоб вирівнювати елементи по текущей влекс лінії*/
+	font-size: 20px;
+	padding: 10px 15px;
+    transition: background .2s linear; /*встановлює ефект переходу між двома станами елементу*/
+    margin-right: 20px;
+}
+
+.menu li a:hover { /*визначення стилю елементу при наведенні на нього курсора миші*/
+	background: #ffcc01; /*hover це псевдоклас для стилізації при наведенні курсора миші на елемент у нас буде він обводитись кольором в ширину 3 пх як ми наведемо курсор*/
+	border-radius: 3px;
+}
+
+.menu li a.logo{
+	font-size: 25px;
+	margin-right: 400px;
+}
+
+.List_of_car {
+    width: 100%;
+    color: #000;
+	font-size: 20px;
+    padding: 10px 15px;
+    list-style-type: none;
+    transition: background .2s linear; /*встановлює ефект переходу між двома станами елементу*/
+    margin-right: 20px;
+}
+
+.List_of_car{
+    display: flex;
+    justify-content: center;
+}
+.listCar{
+    width: 75%;
+}
+
+.listCar tr{
+    display: flex;
+    justify-content: space-between;
+    list-style-type: none;
+    align-items: center;
+}
+
+.listCar tr img{
+    height: 200px;
+    width: 200px;
+}
+
+.listCar tr button{
+    margin-right: 50px;
+}
+.listCars tr p{
+    display: flex;
+    justify-content: space-around;
+    margin-top: 50px;
+}
+.Rent_o {
+    font-size: 20px;
+    text-align: center;
+    margin-top: 40px;
+}
+.middle p {
+    margin-left: 23px;
+}
+.last p {
+    margin-left: 37px;
+}
+.Rent_list button{
+    width: 120px;
+    height: 30px;
+    margin-left: 400px;
+    margin-top: 50px;
+}
+.Rent_list{
+    margin-top: 60px;
+    margin-bottom: 50px;
+    margin-left: 300px;
+    width: 60%;
+    height: 450px;
+    background-color: rgb(190, 183, 196);
+}
+
+.Rent_or{
+    margin-left: 380px;
+    font-size: 25px;
+    margin-bottom: 20px;
+
+}
+.bgReg {
+  background-image: url(images\фон2.png);
+}
+.main-signin {
+    box-shadow: 0px 10px 20px #000;
+    width: 455px;
+    height: 330px;
+    margin: 120px auto;
+  }
+  .main-signin .main-signin__head {
+    background: #242328;
+    border-bottom: 1px solid #2d2f32;
+    border-radius: 10px 10px 0 0;
+    box-shadow: 0px 1px 0px #000;
+    padding: 12px 0;
+  }
+  .main-signin .main-signin__head p {
+    color: #586069;
+    text-align: center;
+  }
+  .main-signin .main-signin__middle {
+    background: #352a5e;
+    border-bottom: 1px solid  #352a5e;
+    border-top: 1px solid  #352a5e;
+    box-shadow: 0px 1px 0px #000;
+  }
+  .main-signin .main-signin__middle .middle__form {
+    margin: 40px 0 20px 0;
+  }
+  .main-signin .main-signin__middle .middle__form ::-webkit-input-placeholder {
+    color: #420916;
+  }
+  .main-signin .main-signin__middle .middle__form :-moz-placeholder {
+    color: #420916;
+  }
+  .main-signin .main-signin__middle .middle__form ::-moz-placeholder {
+    color: #420916;
+  }
+  .main-signin .main-signin__middle .middle__form :-ms-input-placeholder {
+    color: #420916;
+  }
+  .main-signin .main-signin__middle .middle__form input[type="text"], .main-signin .main-signin__middle .middle__form input[type="password"], .main-signin .main-signin__middle .middle__form input[type="submit"] {
+    background: #fcfcfc;
+    border-radius: 5px 5px 0 0;
+    border: none;
+    color: #420916;
+    display: block;
+    margin: 0 20px;
+    outline: none;
+    padding: 15px 0;
+    width: 90%;
+  }
+  
+  .main-signin .main-signin__middle .middle__form input[type="text"], .main-signin .main-signin__middle .middle__form input[type="password"] {
+    padding:15px 20px;
+    width:81%;
+    margin-top: 20px;
+  }
+  
+  .main-signin .main-signin__middle .middle__form input[type="password"] {
+    border-top: 1px solid #acabab;
+    border-radius: 0 0 5px 5px;
+  }
+  .main-signin .main-signin__middle .middle__form input[type="submit"] {
+    background:#420916;
+    border-radius: 5px;
+    border-bottom: 1px solid #000;
+    border-top: 1px solid #80d6f7;
+    color: #fff;
+    font-size: 18px;
+    margin-top: 15px;
+    cursor:pointer;
+    text-transform: uppercase;
+  }
+  .main-signin .main-signin__middle .middle__form input[type="submit"]:active {
+    background: #80d6f7;
+  }
+  .main-signin .main-signin__foot {
+    background: #420916;
+    border-top: 1px solid #420916;
+    border-radius: 0 0 10px 10px;
+    float: left;
+    padding: 12px 0;
+    width: 100%;
+  }
+  .main-signin .main-signin__foot .foot__left {
+    float: left;
+    padding: 0 0 0 6%;
+    width: 56%;
+  }
+  .main-signin .main-signin__foot .foot__left p {
+    color: #586069;
+    margin: 0;
+    padding: 16px 0 0 0;
+    text-transform: uppercase;
+  }
+  .main-signin .main-signin__foot .foot__right {
+    float: left;
+    width: 38%;
+  }
+  .main-signin .main-signin__foot .foot__right .twit,
+  .main-signin .main-signin__foot .foot__right .face {
+    float: left;
+  }
+  .main-signin .main-signin__foot .foot__right .twit a,
+  .main-signin .main-signin__foot .foot__right .face a {
+    -webkit-transition: 0.4s;
+    -moz-transition: 0.4s;
+    -o-transition: 0.4s;
+    transition: 0.4s;
+    display: block;
+    margin: -12px 0;
+    text-indent: -999em;
+    width: 85px;
+    height: 77px;
+  }
+  .main-signin .main-signin__foot .foot__right .twit a:hover,
+  .main-signin .main-signin__foot .foot__right .face a:hover {
+    background-color: #420916;
+  }
+  .main-signin .main-signin__foot .foot__right .twit a {
+    background: url(images/twitter.png) no-repeat center;
+  }
+  .main-signin .main-signin__foot .foot__right .face a {
+    background: url(images/facebook.png) no-repeat center;
+    border-radius: 0 0 10px 0;
+  }
+
+.buttonus {
+    color: #fff;
+    width: 100px;
+    background-color: #800000;
+    height: 20px;
+  }
+.buttonus a {
+  list-style-type: none;
+  color: #daf4fe;
+}
+.buttonus:hover {
+    background: #ffcc01;
+  }
+.admintable{
+display: flex;
+justify-content: flex-end;
+}
